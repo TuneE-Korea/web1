@@ -2,12 +2,30 @@
 <head>
   <title>Web1-html</title>
   <meta charset="utf-8">
+  <style>
+    .js{
+      background-color : purple;
+      color : white;
+    }
+    #first{
+      color : green;
+    }
+  </style>
 </head>
 
 <body>
-  <h1><a href="https://codepen.io/TTuunneeEE/pen/wvZewPe">✨WEB✨</a>       </h1>
-  <input type="button" value="night">
-  <input type="button" value="day">
+  <h1><a href="https://codepen.io/TTuunneeEE/pen/wvZewPe">✨WEB✨</a></h1>
+  <input id ="night_day" type = "button" value = "night" onclick = "
+         if(this.value === 'night'){
+          target.style.backgroundColor = 'black';
+          target.style.color = 'white';
+          this.value = 'day';
+         }else{
+          target.style.backgroundColor = 'white';
+          target.style.color = 'black';
+          this.value = 'night';                                                       
+         }
+  ">                                        
   <oi>
     <li><a href="https://namu.wiki/w/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)">언어 : html, css, javascript</a></li>
     <li><a href="https://codingapple.com/unit/react-0-why-use-react/">라이브러리 : react</a></li>
@@ -18,6 +36,7 @@
   <h2>2024.03.23부로 웹 퍼블리싱 공부 시작😃</h2>
   <p>(배우는 내용들은 모두 <a href="https://www.notion.so/ko-kr" target="_blank" title="My study report page">노션 개인 페이지</a>에 기록 중이다.)</p>
   <p>
+    <span id ="first" class = "js">자바스크립트</span> <span class = "js">자바스크립트</span> <span class = "js">자바스크립트</span> <span class = "js">자바스크립트</span> <span class = "js">자바스크립트</span> <span> 자바스크립트 </span>
     틈틈이 시간내서 <strong><u>꾸준하게</u></strong> 공부하자!
   </p>
   <p>
