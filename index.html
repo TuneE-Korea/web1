@@ -12,21 +12,23 @@
     }
   </style>
   <script>
-    var alist = document.querySelectorAll('a');
     function nightdayhandler(self){
-      if(this.value === 'night'){
+      var target = document.querySelector('body');
+      var alist = document.querySelectorAll('a');
+      if(self.value === 'night'){
             target.style.backgroundColor = 'black';
             target.style.color = 'white';
             self.value = 'day';
-            var i=0;                                                        
+            var i=0;                                        
             while(i<alist.length){
               alist[i].style.color = 'powderblue';                             i = i + 1;      
-            }                                                                                            
-           }else{
+            }                                               
+           }
+      else{
             target.style.backgroundColor = 'white';
             target.style.color = 'black';
             self.value = 'night';
-            var i=0;                                                        
+            var i=0;                                        
             while(i<alist.length){
               alist[i].style.color = 'pink';                                   i = i + 1;      
             }                               
@@ -37,8 +39,8 @@
 
 <body>
   <h1><a href="https://codepen.io/TTuunneeEE/pen/wvZewPe">✨WEB✨</a></h1>
-  <input id ="night_day" type = "button" value = "night" onclick = "nightdayhandler(this)">                             <input id ="night_day" type = "button" value = "night" onclick = "nightdayhandler(this)">            
-  
+  <input id ="night_day" type = "button" value = "night" onclick="nightdayhandler(this);">           
+ 
   <oi>
     <li><a href="https://namu.wiki/w/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)">언어 : html, css, javascript</a></li>
     <li><a href="https://codingapple.com/unit/react-0-why-use-react/">라이브러리 : react</a></li>
